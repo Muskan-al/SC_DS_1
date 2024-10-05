@@ -1,0 +1,29 @@
+import matplotlib.pyplot as plt
+
+# Data for gender distribution
+gender = ['Male', 'Female', 'Other']
+counts = [45, 35, 10]  # Example counts of each gender
+
+# Create bar chart
+plt.bar(gender, counts, color=['blue', 'pink', 'green'])
+plt.title('Gender Distribution in Population')
+plt.xlabel('Gender')
+plt.ylabel('Count')
+
+# Show plot
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Example data for age distribution
+ages = np.random.randint(18, 80, size=100)  # Generate 100 random ages between 18 and 80
+
+# Create histogram
+plt.hist(ages, bins=10, color='skyblue', edgecolor='black')
+plt.title('Age Distribution in Population')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+
+# Show plot
+plt.show()
